@@ -33,7 +33,7 @@ public class Person {
 	}
 	
 	public String toString() {
-		return getFirstName() +" " +getLastName() +" " +getId();
+		return "First Name: " +getFirstName() +", Last Name: " +getLastName() +", ID: " +getId();
 	}
 	
 	//End of Person class
