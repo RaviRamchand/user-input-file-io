@@ -19,13 +19,10 @@ public class FileOperations{
 		this._pList.add(new Person(firstName, lastName, id));
 	}	
 
-
+//Write to the file
 	public void writeFile() {
-		//PrintWriter writer = null;
 
 		try {
-			//File fileDesc = new File("student.txt");
-			//writer = new PrintWriter(fileDesc); 
 			FileWriter fw = new FileWriter("student.txt", true);
 			BufferedWriter bw = new BufferedWriter(fw);
 			PrintWriter writer = new PrintWriter(bw);
@@ -42,11 +39,6 @@ public class FileOperations{
 		catch(IOException e) {
 			e.printStackTrace();
 		}
-//		finally {
-//			if(writer != null) {
-//				writer.close();
-//			}
-//		}
 
 		//End of writerFile()
 	}
